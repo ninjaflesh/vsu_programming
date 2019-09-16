@@ -10,3 +10,5 @@ elif x < 0 and y < 0:
     print('3 4etvet')
 elif x > 0 and y < 0:
     print('4 4etvert')
+elif not x or not y:
+    print('na osi')
