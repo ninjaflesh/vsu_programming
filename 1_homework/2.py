@@ -9,6 +9,6 @@ c = float(c)
 d = float(d)
 f = float(f)
 if f - d:
-    print((a * b - c)/(f - d))
+    print((a * b - c) / (f - d))
 else:
     print('Otmena')
