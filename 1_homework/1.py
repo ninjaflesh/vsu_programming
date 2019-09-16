@@ -1,0 +1,7 @@
+x = input('Vvod x: ')
+y = input('Vvod y: ')
+z = input('Vvod y: ')
+x = float(x)
+y = float(y)
+z = float(z)
+print((x**2+y**2+z**2)**0.5)
