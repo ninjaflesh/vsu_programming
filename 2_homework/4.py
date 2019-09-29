@@ -1,6 +1,6 @@
 def skobki(r):
-    ot = 0
-    zk = 0
+    ot
+    zk
     ot = r.count("(")
     zk = r.count(")")
     if ot > zk:
