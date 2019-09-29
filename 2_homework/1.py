@@ -1,6 +1,6 @@
 s = []
 lul = input("Vvod: ")
-while not lul == "":
+while lul:
     s.append(lul)
     lul = input("Vvod: ")
 print(s)
