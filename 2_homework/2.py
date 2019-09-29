@@ -1,7 +1,3 @@
-spis = []
-lul = input("Vvod: ")
-while lul:
-    spis.append(lul)
-    lul = input("Vvod: ")
-spis = "".join(sorted(spis, reverse=True))
-print(spis)
+from tool import tool_1
+print("".join(sorted(tool_1(), reverse=True)))
+
