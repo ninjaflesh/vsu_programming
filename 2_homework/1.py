@@ -1,6 +1,2 @@
-s = []
-lul = input("Vvod: ")
-while lul:
-    s.append(lul)
-    lul = input("Vvod: ")
-print(s)
+from tool import tool_1
+print(tool_1())
