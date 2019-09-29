@@ -1,11 +1,8 @@
 def skobki(r):
     ot = 0
     zk = 0
-    for x in r:
-        if x == "(":
-            ot += 1
-        elif x == ")":
-            zk += 1
+    ot = r.count("(")
+    zk = r.count(")")
     if ot > zk:
         return("Не хватает 1 закрывающей скобки!")
     elif ot < zk:
