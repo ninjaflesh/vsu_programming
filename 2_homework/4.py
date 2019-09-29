@@ -2,11 +2,10 @@ def skobki(r):
     ot = r.count("(")
     zk = r.count(")")
     if ot > zk:
-        return("Не хватает 1 закрывающей скобки!")
+        return("Не хватает" ot-zk "закрывающих скобки!")
     elif ot < zk:
-        return("Не хватает 1 открывающей скобки!")
-    else:
-        return("Каеф!")
+        return("Не хватает" zk-ot "открывающей скобки!")
+    return("Каеф!")
 
 
 lul = input("Vvod: ")
