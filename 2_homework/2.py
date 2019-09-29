@@ -1,7 +1,7 @@
-s = []
+spis = []
 lul = input("Vvod: ")
 while lul:
-    s.append(lul)
+    spis.append(lul)
     lul = input("Vvod: ")
-s = "".join(sorted(s)[::-1])
-print(s)
+spis = "".join(sorted(spis, reverse=True))
+print(spis)
