@@ -1,5 +1,5 @@
 enter = input("Vvod: ").split()
-m = list(map(lambda s: len(s), enter))
+m = list(map(len, enter))
 print(enter[m.index(max(m))])
 one = set(enter)
 m.clear()
