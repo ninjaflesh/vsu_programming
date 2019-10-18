@@ -4,7 +4,7 @@ from random import randint
 def odd_even(data):
     n = len(data)
     isSorted = 0
-    while isSorted == 0:
+    while isSorted:
         isSorted = 1
         for i in range(1, n - 1, 2):
             if data[i] > data[i + 1]:
