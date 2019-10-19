@@ -1,8 +1,11 @@
 enter = input("Vvod: ").split()
+
 m = list(map(len, enter))
 print(enter[m.index(max(m))])
-one = set(enter)
+
 m.clear()
-for x in one:
+# m = [x for x in (set(enter))]
+for x in set(enter):
     m.append(enter.count(x))
-print(list(one)[m.index(max(m))])
+
+print(list(set(enter))[m.index(max(m))])
