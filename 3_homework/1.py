@@ -1,5 +1,5 @@
 vod = input("Enter: ")
-symbols = ["-", "+", "/", "*", "**", "//"]
+symbols = {"-", "+", "/", "*", "**", "//"}
 operation = ''.join(symbols & set(vod))
 operation_index = vod.find(operation)
 if vod[operation_index + 1:].find(operation) != -1:
@@ -11,7 +11,7 @@ operations = {
     '+': x - y,
     '*': x * y,
     '/': x / y,
-    '**': x // y,
-    '//': x**y
+    '**': x ** y,
+    '//': x // y
 }
 print(operations[operation])
