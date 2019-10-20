@@ -10,7 +10,7 @@ def odd_even(data):
             if data[i] > data[i + 1]:
                 data[i], data[i + 1] = data[i + 1], data[i]
                 is_sorted = 0
-        for i in range(0, n - 1, 2):
+        for i in range(n - 1, 2):
             if data[i] > data[i + 1]:
                 data[i], data[i + 1] = data[i + 1], data[i]
                 is_sorted = 0
