@@ -7,8 +7,8 @@ if vod[operation_index + 1:].find(operation) != -1:
 x, y = vod.split(operation)
 x, y = float(x), float(y)
 operations = {
-    '-': x + y,
-    '+': x - y,
+    '-': x - y,
+    '+': x + y,
     '*': x * y,
     '/': x / y,
     '**': x ** y,
