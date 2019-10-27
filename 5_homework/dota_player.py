@@ -2,9 +2,7 @@ from collections import deque
 
 
 def dota_pleyer(x):
-    if not len(x) % 2 and x[0] == "D":
-        return True
-    return False
+    return not len(x) % 2 and x[0] == "D":
 
 
 name = {
