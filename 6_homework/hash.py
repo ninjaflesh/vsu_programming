@@ -19,34 +19,35 @@ def set_value(key, value):
 
 def del_value(key):
     index = hash(key)
-    for x in range(len(storage[index])):
-        if key == storage[index][x][0]:
-            del storage[index][x][1]
+    for i in storage[index]:
+        if key == i[0]:
+            i[1] = 0
+            break
 
 
 def get_value(key):
     index = hash(key)
-    for x in range(len(storage[index])):
-        if key == storage[index][x][0]:
-            return storage[index][x][1]
+    for i in storage[index]:
+        if key == i[0]:
+            return i[1]
 
 
 print(storage)
 
 set_value('abc', 1)
 set_value('abc', 100)
-set_value('abc', 1001)
+
 set_value('xyz', 2)
 set_value('xyz', 200)
-set_value('xyz', 2001)
-set_value('ert', 34)
+
+set_value('ert', 3)
+set_value('ert', 300)
 
 print(storage)
 
 del_value('ert')
 
 print(get_value('abc'))
-
 print(get_value('xyz'))
 
 print(storage)
