@@ -4,18 +4,17 @@ class Matrix:
         self.column = None
         self.mat = []
 
-    def enter(self):
+    def input_mat(self):
         self.string = int(input('Строки: '))
         self.column = int(input('Столбцы: '))
-        self.mat.append([[input('Элементы: ') for x in range(self.column)]
-                         for x in range(self.string)])
+        self.mat = [[int(input('Элементы: ')) for x in range(self.column)]
+                    for x in range(self.string)]
 
-    def out(self):
+    def out_mat(self):
         for x in self.mat:
-            for mat in x:
-                print(mat)
+            print(x)
 
 
 m = Matrix()
-m.enter()
-m.out()
+m.input_mat()
+m.out_mat()
