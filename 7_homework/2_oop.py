@@ -11,8 +11,7 @@ class Matrix:
                     for x in range(self.string)]
 
     def __str__(self):
-        s = [''.join(str(i) for i in x) for x in self.mat]
-        return str(s)
+        return '\n'.join(' '.join(str(i) for i in x) for x in self.mat)
 
 
 matrix = Matrix()
