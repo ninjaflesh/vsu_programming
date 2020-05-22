@@ -29,8 +29,8 @@ class Matrix2x2(Matrix):
         super().__init__(mat)
 
     def determinant(self):
-        print(self.mat[0][0] * self.mat[1][1] -
-              self.mat[0][1] * self.mat[1][0])
+        return (self.mat[0][0] * self.mat[1][1] -
+                self.mat[0][1] * self.mat[1][0])
 
 
 m = Matrix()
@@ -38,3 +38,7 @@ m.input_mat()
 x = 9
 m.set_element(1, 1, x)
 print(m)
+
+test = [[1, 2], [4, 5]]
+det = Matrix2x2(test)
+print(det.determinant())
