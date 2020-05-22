@@ -11,10 +11,9 @@ class Matrix:
                     for x in range(self.string)]
 
     def out_mat(self):
-        for x in self.mat:
-            print(x)
+        return ' '.join(' '.join(str(i) for i in x) for x in self.mat)
 
 
 m = Matrix()
 m.input_mat()
-m.out_mat()
+print(m.out_mat())
